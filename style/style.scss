@@ -1,0 +1,124 @@
+///// var 
+
+$White: hsl(0, 0%, 100%);
+$Black: hsl(0, 0%, 0%);
+$Dark-Gray: hsl(0, 0%, 55%);
+$Very-Dark-Gray: hsl(0, 0%, 41%);
+
+////////fonts
+
+$Alata:'Alata',
+sans-serif;
+
+$Josefin:'Josefin Sans',
+sans-serif;
+
+*,*::after,*::before{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+
+}
+
+a,li,button{
+    text-decoration: none;
+    color: $White;
+    list-style: none;
+    outline: none;
+    border: none;
+}
+
+
+body{
+    font-size: 15px;
+    font-family: $Alata;
+    min-width: 375px;
+    font-weight: 200;
+
+}
+
+.flex-col-center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.container{
+    display: grid;
+    grid-auto-flow: row;
+    position: relative;
+    width: 100%;
+    
+    .header{
+        position: relative;
+        height: 75vh;
+        color: $White;
+        width: 100%;
+        @extend .flex-col-center;
+        padding: 2rem 1.5rem;
+
+        &__img{
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            z-index: -100;
+            img{
+            object-fit: cover;
+            width: 100%;
+            height: 100%;    
+            }
+        }
+
+
+        &__nav{
+            @extend .flex-col-center;
+            position: absolute;
+            top: 2.5rem;
+            width: 100%;
+
+            .nav__logo{
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                padding: 0 2rem;
+                img{
+                    width: 45%;
+                }
+                .nav-menu-btn{
+                    background-color: transparent;
+                    .bar{
+                        width: 30px;
+                        height: 1.9px;
+                        margin-bottom: 6px;
+                        background-color: #fff;
+                    }
+                }
+
+            }
+
+            .nav__links {
+                display: none;
+            }
+        }
+
+        &__hero{
+            align-self: center;
+            border: $White solid 1px ;
+            padding: 1rem 2rem;
+            font-family: $Josefin;
+            line-height: 2.3rem;
+            letter-spacing: 0.3rem;
+            text-transform: uppercase;
+
+                .break{
+                    display: table;
+                }
+        }
+    }
+}
+
+
+

@@ -1,1 +1,120 @@
-/* No CSS *//*# sourceMappingURL=style.css.map */
+*, *::after, *::before {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+a, li, button {
+  text-decoration: none;
+  color: white;
+  list-style: none;
+  outline: none;
+  border: none;
+}
+
+body {
+  font-size: 15px;
+  font-family: "Alata", sans-serif;
+  min-width: 375px;
+  font-weight: 200;
+}
+
+.flex-col-center, .container .header, .container .header__nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.container {
+  display: -ms-grid;
+  display: grid;
+  grid-auto-flow: row;
+  position: relative;
+  width: 100%;
+}
+
+.container .header {
+  position: relative;
+  height: 75vh;
+  color: white;
+  width: 100%;
+  padding: 2rem 1.5rem;
+}
+
+.container .header__img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  z-index: -100;
+}
+
+.container .header__img img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.container .header__nav {
+  position: absolute;
+  top: 2.5rem;
+  width: 100%;
+}
+
+.container .header__nav .nav__logo {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0 2rem;
+}
+
+.container .header__nav .nav__logo img {
+  width: 45%;
+}
+
+.container .header__nav .nav__logo .nav-menu-btn {
+  background-color: transparent;
+}
+
+.container .header__nav .nav__logo .nav-menu-btn .bar {
+  width: 30px;
+  height: 1.9px;
+  margin-bottom: 6px;
+  background-color: #fff;
+}
+
+.container .header__nav .nav__links {
+  display: none;
+}
+
+.container .header__hero {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  border: white solid 1px;
+  padding: 1rem 2rem;
+  font-family: "Josefin Sans", sans-serif;
+  line-height: 2.3rem;
+  letter-spacing: 0.3rem;
+  text-transform: uppercase;
+}
+
+.container .header__hero .break {
+  display: table;
+}
+/*# sourceMappingURL=style.css.map */
