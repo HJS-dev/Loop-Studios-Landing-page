@@ -24,7 +24,7 @@ body {
   font-weight: 200;
 }
 
-.flex-col-center, .container .header, .container .header__nav, .container .header__nav .nav__links, .container .section {
+.flex-col-center, .container .header, .container .header__nav, .container .header__nav .nav__links, .container .section, .container .footer, .container .footer_right, .container .footer_right__links, .container .footer_left {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -218,7 +218,7 @@ body {
   text-transform: uppercase;
   place-self: center;
   margin-bottom: 1rem;
-  font-size: 2.2rem;
+  font-size: 2.5rem;
 }
 
 .container .section2__itemes--btn {
@@ -246,11 +246,73 @@ body {
 .container .section2__itemes h3 {
   position: absolute;
   bottom: 0;
-  font-size: 1.75rem;
+  font-size: 2.2rem;
+  line-height: 1.2;
+  letter-spacing: .2rem;
   font-family: "Josefin Sans", sans-serif;
   text-transform: uppercase;
   color: white;
   margin-left: 2.5rem;
   margin-bottom: 2.5rem;
+}
+
+.container .section2__itemes h3 .break {
+  display: table;
+}
+
+.container .footer {
+  background-color: black;
+  width: 100%;
+}
+
+.container .footer_right__logo {
+  margin-top: 5rem;
+  margin-bottom: 2rem;
+}
+
+.container .footer_right__links a {
+  padding: 1rem 2rem;
+  color: white;
+  font-size: 1.5rem;
+}
+
+.container .footer_left {
+  width: 100%;
+  margin-top: 4rem;
+}
+
+.container .footer_left__social {
+  width: 40%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 3rem;
+}
+
+.container .footer_left__social img {
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
+}
+
+.container .footer_left__copy {
+  color: #8c8c8c;
+  margin: 2rem 0;
+}
+
+.container .footer .attribution {
+  font-size: 11px;
+  text-align: center;
+  margin: 1rem 0;
+  color: coral;
+}
+
+.container .footer .attribution a {
+  color: #bdb6b6;
 }
 /*# sourceMappingURL=style.css.map */
