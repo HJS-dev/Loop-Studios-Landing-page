@@ -24,7 +24,7 @@ body {
   font-weight: 200;
 }
 
-.flex-col-center, .container .header, .container .header__nav, .container .header__nav .nav__links, .container .section, .container .footer, .container .footer_right, .container .footer_right__links, .container .footer_left {
+.flex-col-center, .container .header, .container .header__nav, .container .header__nav .nav__links.show, .container .section, .container .footer, .container .footer_right, .container .footer_right__links, .container .footer_left {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -73,7 +73,9 @@ body {
 
 .container .header__nav {
   position: absolute;
-  top: 2.5rem;
+  top: 0;
+  margin-top: 5rem;
+  padding: 0 1rem;
   width: 100%;
 }
 
@@ -107,22 +109,25 @@ body {
   background-color: #fff;
 }
 
-.container .header__nav .nav__logo .nav-menu-btn .close:focus .bar1 {
+.container .header__nav .nav__logo .nav-menu-btn.close .bar1 {
   -webkit-transform: rotate(45deg);
           transform: rotate(45deg);
 }
 
-.container .header__nav .nav__logo .nav-menu-btn .close:focus .bar2 {
+.container .header__nav .nav__logo .nav-menu-btn.close .bar2 {
   display: none;
 }
 
-.container .header__nav .nav__logo .nav-menu-btn .close:focus .bar3 {
+.container .header__nav .nav__logo .nav-menu-btn.close .bar3 {
   -webkit-transform: rotate(135deg);
           transform: rotate(135deg);
 }
 
 .container .header__nav .nav__links {
   display: none;
+}
+
+.container .header__nav .nav__links.show {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: start;
@@ -135,14 +140,16 @@ body {
   padding: 0.5rem 2rem;
   text-transform: uppercase;
   font-family: "Josefin Sans", sans-serif;
-  font-size: 1.5rem;
+  font-size: 4rem;
   font-weight: 200;
   letter-spacing: 0.2rem;
 }
 
-.container .header__nav .nav__links a {
-  margin-top: 0.75rem;
-  margin-bottom: 0.75rem;
+.container .header__nav .nav__links.show a {
+  margin-top: 1rem;
+  margin-bottom: 1.7rem;
+  margin-left: 2rem;
+  color: white;
 }
 
 .container .header__hero {
@@ -157,6 +164,8 @@ body {
   letter-spacing: 0.3rem;
   text-transform: uppercase;
   width: 80%;
+  -webkit-transform: translateY(25%);
+          transform: translateY(25%);
 }
 
 .container .header__hero .break {
