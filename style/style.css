@@ -325,14 +325,14 @@ body {
   margin: 2rem 0;
 }
 
-.container .footer .attribution {
+.container .footer .editor {
   font-size: 11px;
   text-align: center;
   margin: 1rem 0;
   color: coral;
 }
 
-.container .footer .attribution a {
+.container .footer .editor a {
   color: #bdb6b6;
 }
 /*# sourceMappingURL=style.css.map */

@@ -1,1 +1,218 @@
-/* No CSS *//*# sourceMappingURL=LG-screen.css.map */
+.container .header {
+  height: 70vh;
+}
+
+.container .header__nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 1rem 2rem;
+}
+
+.container .header__nav .nav__logo {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.container .header__nav .nav__logo .nav-menu-btn {
+  display: none;
+}
+
+.container .header__nav .nav__links {
+  display: block;
+  width: 100%;
+  height: inherit;
+  position: relative;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  background-color: transparent;
+}
+
+.container .header__nav .nav__links a {
+  color: white;
+  padding: .5rem;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.container .header__hero {
+  width: 39rem;
+  -ms-flex-item-align: start;
+      -ms-grid-row-align: start;
+      align-self: start;
+  margin-left: 2rem;
+  padding: 1.5rem 1rem;
+  -webkit-transform: translatey(25%);
+          transform: translatey(25%);
+}
+
+.container .header__hero .hero__heading {
+  padding: 0.5rem 2rem;
+}
+
+.container .header__hero .hero__heading .break {
+  display: inline;
+}
+
+.container .section1 {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  padding-bottom: 0;
+  position: relative;
+  margin-top: 5rem;
+}
+
+.container .section1__img {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  padding: 1rem 1rem 0.1rem 2rem;
+  margin-top: 0;
+}
+
+.container .section1__titel {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 55%;
+  padding: 4rem 5rem;
+  margin: 0;
+  text-align: start;
+  background-color: #fff;
+}
+
+.container .section1__titel h2 {
+  padding: 0;
+  margin: 0;
+  margin-bottom: 1rem;
+}
+
+.container .section1__titel h2 .break {
+  display: table;
+}
+
+.container .section1__titel p {
+  font-size: 1.2rem;
+  padding: 0;
+}
+
+.container .section2 {
+  margin-top: 5rem;
+  margin-bottom: 7rem;
+  padding: 1rem 4rem;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+}
+
+.container .section2__itemes--titel {
+  -ms-grid-column: 1;
+      grid-column-start: 1;
+  grid-column-end: 4;
+  width: 100%;
+  text-align: start;
+  margin-bottom: 3rem;
+}
+
+.container .section2__itemes--btn {
+  -webkit-box-ordinal-group: 1;
+      -ms-flex-order: 0;
+          order: 0;
+  margin-bottom: 3rem;
+}
+
+.container .footer {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: relative;
+  height: 30vh;
+}
+
+.container .footer_right {
+  padding-left: 4rem;
+}
+
+.container .footer_right__logo {
+  -ms-flex-item-align: start;
+      -ms-grid-row-align: start;
+      align-self: start;
+  margin: 0;
+  padding: 1rem 2rem;
+}
+
+.container .footer_right__links {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.container .footer_right__links a {
+  font-size: 1rem;
+}
+
+.container .footer_left {
+  margin: 0;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  padding-right: 4rem;
+}
+
+.container .footer_left__social {
+  margin: 0;
+  padding: 1rem 2rem;
+}
+
+.container .footer_left__copy {
+  margin: 0;
+  padding: 1rem 2rem;
+}
+
+.container .footer .editor {
+  position: absolute;
+  bottom: 0.5rem;
+  left: 50%;
+  margin: auto;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+/*# sourceMappingURL=LG-screen.css.map */
