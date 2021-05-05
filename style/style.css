@@ -300,6 +300,26 @@ body {
           transform: scale(1.5);
 }
 
+.container .footer_left__social img.fb {
+  -webkit-filter: drop-shadow(#4267B2 2px 2px 15px);
+          filter: drop-shadow(#4267B2 2px 2px 15px);
+}
+
+.container .footer_left__social img.tw {
+  -webkit-filter: drop-shadow(#1DA1F2 2px 2px 15px);
+          filter: drop-shadow(#1DA1F2 2px 2px 15px);
+}
+
+.container .footer_left__social img.pin {
+  -webkit-filter: drop-shadow(#E60023 2px 2px 15px);
+          filter: drop-shadow(#E60023 2px 2px 15px);
+}
+
+.container .footer_left__social img.insta {
+  -webkit-filter: drop-shadow(#fd1d1d 2px 2px 15px);
+          filter: drop-shadow(#fd1d1d 2px 2px 15px);
+}
+
 .container .footer_left__copy {
   color: #8c8c8c;
   margin: 2rem 0;

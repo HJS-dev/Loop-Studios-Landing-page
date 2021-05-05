@@ -320,7 +320,26 @@ body {
                 height: 3rem;
 
                 img {
+
                     transform: scale(1.5);
+
+                    &.fb {
+                        filter: drop-shadow(#4267B2 2px 2px 15px);
+                    }
+
+                    &.tw {
+                        filter: drop-shadow(#1DA1F2 2px 2px 15px);
+                    }
+
+                    &.pin {
+                        filter: drop-shadow(#E60023 2px 2px 15px);
+                    }
+
+
+                    &.insta {
+                        filter: drop-shadow(#fd1d1d 2px 2px 15px);
+                      
+                    }
                 }
             }
 
@@ -335,6 +354,7 @@ body {
             text-align: center;
             margin: 1rem 0;
             color: coral;
+
             a {
                 color: rgb(189, 182, 182);
             }
