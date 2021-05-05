@@ -11,7 +11,7 @@ a,
 li,
 button {
   text-decoration: none;
-  color: white;
+  background-color: transparent;
   list-style: none;
   outline: none;
   border: none;
@@ -198,5 +198,59 @@ body {
   font-size: 1.65rem;
   line-height: 2;
   color: dimgray;
+}
+
+.container .section2 {
+  display: -ms-grid;
+  display: grid;
+  grid-auto-flow: row;
+  gap: 2.5rem;
+  position: relative;
+  width: 100%;
+}
+
+.container .section2__itemes {
+  position: relative;
+}
+
+.container .section2__itemes--titel {
+  font-family: "Josefin Sans", sans-serif;
+  text-transform: uppercase;
+  place-self: center;
+  margin-bottom: 1rem;
+  font-size: 2.2rem;
+}
+
+.container .section2__itemes--btn {
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
+  place-self: center;
+}
+
+.container .section2__itemes--btn button {
+  padding: 1.5rem 4.5rem;
+  border: black 2px solid;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  letter-spacing: 0.4rem;
+  font-weight: 400;
+  cursor: pointer;
+}
+
+.container .section2__itemes img {
+  width: 100%;
+}
+
+.container .section2__itemes h3 {
+  position: absolute;
+  bottom: 0;
+  font-size: 1.75rem;
+  font-family: "Josefin Sans", sans-serif;
+  text-transform: uppercase;
+  color: white;
+  margin-left: 2.5rem;
+  margin-bottom: 2.5rem;
 }
 /*# sourceMappingURL=style.css.map */
